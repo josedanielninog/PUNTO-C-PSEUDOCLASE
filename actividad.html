@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVIDAD EJEMPLOS</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+       <body>
+        <h2>1. Crea un botón que cambie de color cuando esté en estado :hover.</h2>
+        <button class="boton">CLICKEAME</button>
+
+    
+    <h2> 2. Usa :target para mostrar un mensaje oculto al hacer clic en un enlace.</h2>
+          <a href="#mensaje">¿SEGUROOOO?</a>
+          <a href="#">Borralooo</a>
+            <div id="mensaje">
+                <p>¡Has encontrado el mensaje oculto!</p>
+             </div>
+
+         <h2>3. Da un estilo especial al primer hijo de un contenedor usando :first-child.</h2>
+         <div class="contenedor">
+           <p>Este es el primer párrafo.</p>
+            <p>Este es el segundo párrafo.</p>
+             <p>Y este es el tercero.</p>
+              </div>  
+            
+              
+            <h2>4.Estiliza los campos de formulario no válidos usando :invalid.</h2>
+            <div >
+            <form class="form4">
+         <label for="correo">Correo electrónico:</label>
+         <input type="email" id="correo" name="correo" required>
+
+       <label for="nombre">Nombre (mínimo 3 caracteres):</label>
+         <input type="text" id="nombre" name="nombre" minlength="3" required>
+ 
+         <button type="submit">Enviar</button>
+          </form>
+         </div>
+           
+            
+
+          <h2>5. Resalta solo los campos de tipo email con :type.</h2>
+          <div>
+            <form class="form5">
+             <label for="correo">Correo electrónico:</label>
+             <input type="email" id="correo" name="correo" >
+             
+
+              <label for="nombre">Nombre (mínimo 3 caracteres):</label>
+         <input type="text" id="nombre" name="nombre" minlength="3">
+
+
+         <button type="submit">Enviar</button> 
+             </form>
+          </div>
+
+            <h2>6. Diseña un formulario donde el campo activo (:focus) cambie de borde.</h2>
+            <div>
+            <form class="form6">
+                 <label for="NOMBRE"> TIPO DE SANGRE:</label>
+         <input type="text" id="nombre" name="nombre" minlength="3" required>
+
+
+         <button type="submit">Enviar</button> 
+         </form>
+        </div>
+         
+
+
+         <h2>7. Estiliza únicamente los elementos únicos de su tipo con :only-of-type.</h2>
+                 <div class="contenedor">
+               <p>Primer párrafo</p>
+             <p>Segundo párrafo</p>
+              </div>
+
+            <div class="contenedor">
+           
+             
+             </div>
+
+             <h2>8. Aplica estilo solo al primer párrafo de una sección con :first-of-type.</h2>
+             <div class="section8">
+             
+  <p>Este es el primer párrafo (será resaltado).</p>
+  <p>Este es el segundo párrafo.</p>
+  <p>Y este es el tercero.</p>
+
+</div>
+
+              <h2> 9. Usa :root para definir una variable de color y aplícala.</h2>
+                  <div class="section9">
+                <h2>EJEMPLO</h2>
+               <p>Este texto usa un color definido como variable en :root.</p>
+                </div>
+
+                <h2>10.Diseña una navegación con sus etiquetas semanticas que cambie su color al pasar
+sobre cada link.</h2>
+           </div>
+
+     <div>
+        <ul>
+           <li>
+              <nav>
+            <a href="#home"> *Inicio</a>
+            <a href="#about"> *Acerca de</a>
+            <a href="#services">*Servicios</a>
+            <a href="#contact">*Contacto</a>
+        </nav>
+           </li>
+             </ul>
+             </div>
+
+<h2>11.Añade un icono antes de cada título con ::before.</h2>
+<div>
+        <section class="section11">
+  <h2>Inicio</h2>
+  <h2>Servicios</h2>
+  <h2>Sobre nosotros</h2>
+  <h2>Contacto</h2>
+        </section>
+        </div>
+
+       <h2>12. Añade una línea decorativa después de cada párrafo con ::after.</h2>
+       <div>
+<section class="section12">
+  <p>Este es el primer párrafo de ejemplo.</p>
+  <p>Este es el segundo párrafo con una línea decorativa debajo.</p>
+  <p>Y este es el tercero, que también la tendrá.</p>
+</section>
+</div>
+
+    <h2>13.Crea un botón con un efecto de sombra usando ::after</h2>
+    <div>
+       <button class="boton00">PRESIONAME</button>
+       </div>
+          
+
+       <h2>14.Añade comillas antes y después de un bloque de cita.</h2>
+          <div>
+               <blockquote class="cita14">
+            "Errare humanum est."
+                </blockquote>
+
+                <h2>15.Diseña un input que tenga un ícono dentro usando ::before.</h2>
+            <div class="input-wrapper">
+                <input type="text" placeholder="Buscar...">
+                   </div>
+
+
+     <h2>16.Coloca una imagen de forma relative y mueve su posición sin alterar el flujo.</h2>
+              <div class="imagencontainer">
+                 <img src="gojo.jpg" alt="Imagen de ejemplo" class="imagen-movida"> 
+                  </div>
+
+
+        <h2>17.Crea una tarjeta que contenga un botón de eliminar con absolute.</h2>
+        <div class="tarjeta">
+      <button class="btn-eliminar">✖</button>
+       <h3>Tarjeta de ejemplo</h3>
+        <p>Esta es una tarjeta con un botón de eliminar posicionado con <b>absolute</b>.</p>
+            </div>
+      
+           
+
+            <h2>18.Haz una barra de navegación fija en la parte superior (fixed).</h2>
+            <div class="barra-navegacion">
+         <nav>
+             <ul>
+              <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+             </ul>
+               </nav>
+            </div>
+            <h2>19.Apila dos cajas usando z-index para controlar qué caja aparece arriba, cada caja
+                          debe tener un color de fondo diferente.</h2>
+               <div class=" caja caja1">Caja 1</div>
+               <div class=" caja caja2">Caja 2</div>
+
+
+
+               <h2>20.Diseña una card que se centre usando position y transform.</h2>
+               <div class="cardcentrada">
+               <h3>Card Centrada</h3>
+    <p>Esta card está centrada en la página usando position y transform.</p>
+               </div>
+                
+
+     <h2>21.Define una variable global para color primario y aplícala a varios elementos</h2>
+        <div class="section21">
+           <h1>Título principal</h1>
+           <h2>Subtítulo</h2>
+             <h3>Encabezado menor</h3>
+               <p>Este es un párrafo de ejemplo con un <a href="#">enlace</a>.</p>
+                </div>   
+
+              <div>
+        <h2>22.Crea un tema oscuro cambiando variables en :root</h2>
+          <div class="card">
+            <h2>Card Oscura</h2>
+                 </div>
+
+        <h2> 23.Usa una variable con valor fallback si no existe otra definida.</h2>    
+           <div class="card">
+  <h2>MASTERCARD</h2>
+  <p>ORIGINAL</p>
+  <a href="#">Enlace dentro de la tarjeta</a>
+</div>
+
+
+<div class="card" style="--fondo: #222222; --texto: #ffcc00;">
+  <h2>VISA</h2>
+  <p>PERSONALIZADA</p>
+</div>
+     
+    
+        
+</body>
+</html>

@@ -1,0 +1,487 @@
+html, body {
+  background-color: white; 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.boton {
+
+  background-color: rgb(17, 165, 91);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: rgb(68, 0, 255);
+}
+
+#mensaje {
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+#mensaje:target {
+    display: block;
+}
+
+.contenedor p:first-child {
+  color: white;
+  background-color: #e90ea7;
+  padding: 10px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+
+.form4 input:invalid {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+   display: block;
+  margin-bottom: 12px;
+}
+
+.form4 input:valid {
+  border: 2px solid green;
+  background-color: #e6ffe6;
+   display: block;
+  margin-bottom: 12px;
+}
+
+
+
+
+.form5 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+}
+
+input[type="email"] {
+  border: 2px solid #007bff;
+  background-color: #e6f0ff;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.form6 input {
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+
+.form6 input:focus {
+  border: 2px solid #007bff; 
+  outline: none; 
+  background-color: #eef6ff; 
+}
+
+
+
+
+.contenedor :only-of-type {
+  background-color: #043b22;
+  color: #940b0b;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.section8 p:first-of-type {
+  background-color: #e0e4e9;
+  color: #d4e20c;
+  padding: 10px;
+  border-left: 4px solid #4171a3;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+
+:root {
+  --color-principal: #007bff;  
+  --color-fondo: #e6f0ff;      
+}
+
+
+.section9 {
+  background-color: var(--color-fondo);
+  border: 2px solid var(--color-principal);
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  font-family: Arial, sans-serif;
+}
+
+.section9 h2 {
+  color: var(--color-principal);
+}
+
+.section9 p {
+  color: #333;
+}
+
+
+:root {
+  --color-hover: #d2f148; 
+}
+
+nav {
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+
+a:hover,
+a:focus {
+  color: var(--color-hover);
+}
+
+.section11 h2 {
+  position: relative;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding-left: 30px; 
+}
+
+
+.section11 h2::before {
+  content: "👉"; 
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-size: 20px;
+}
+
+.section12 p {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.section12 p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #4171a3;
+  margin-top: 8px;
+}
+.boton00{
+  position: relative; /* 🔹 NECESARIO para que ::after se posicione respecto al botón */
+  background-color: #4171a3;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+/* Crea la sombra con ::after */
+.boton00::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  z-index: -1;
+  transition: all 0.2s ease;
+}
+
+
+
+
+.cita14  {
+  font-style: italic;
+  font-size: 18px;
+  color: #333;
+  margin: 20px;
+  padding: 10px 20px;
+  border-left: 4px solid #4171a3;
+  position: relative;
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.input-wrapper::before {
+  content: "🔍"; 
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888;
+}
+
+.input-wrapper input {
+  padding: 8px 8px 8px 35px; 
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-wrapper input:focus {
+  border-color: #4a90e2;
+}
+
+
+.imagencontainer {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.imagen-movida {
+  position: relative;   
+  top: 20px;            
+  left: 30px;           
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  width: 250px;   
+  height: auto; 
+}
+
+.imagen-movida:hover {
+  top: 0;               
+  left: 0;
+}
+
+.tarjeta {
+  position: relative;         
+  width: 250px;
+  background: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+}
+
+.btn-eliminar {
+  position: absolute;         
+  top: 8px;                    
+  right: 8px;                   
+  background: #e74c3c;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-eliminar:hover {
+  background: #c0392b;          
+}
+
+
+
+
+
+.barra-navegacion {
+  position: fixed;        
+  top: 0;                 
+  left: 0;
+  width: 100%;            
+  background-color: #f3f0f0;
+  padding: 10px 0;
+  z-index: 1000;          
+}
+
+
+.barra-navegacion ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.barra-navegacion a {
+  color: rgb(7, 5, 5);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.barra-navegacion a:hover {
+  color: #4a90e2;
+}
+
+
+.contenido {
+  margin-top: 80px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+.caja {
+  width: 250px;           
+  height: 150px;           
+  margin: 3px auto;       
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+
+.caja1 {
+  background-color: #d6ec09;  
+}
+
+.caja2 {
+  background-color: #10bd3b;  
+}
+
+
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Card centrada debajo del h2 */
+.cardcentrada {
+  width: 300px;
+  margin: 0 auto 40px auto; /* Auto para centrar horizontalmente, margen inferior */
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  text-align: center;
+}
+
+
+
+.cardcentrada button:hover {
+  background-color: #2980b9;
+}
+
+
+
+:root {
+  --color-primario: #3498db;  /* Azul */
+}
+
+/* Aplicar la variable solo a los elementos dentro de la sección */
+.section21 h1,
+.section21 h2,
+.section21 h3,
+.section21 p,
+.section21 a {
+  color: var(--color-primario);
+  font-family: Arial, sans-serif;
+}
+
+.section21 a {
+  text-decoration: none;
+}
+
+.section21 a:hover {
+  text-decoration: underline;
+}
+
+/* Variables para la tarjeta */
+:root {
+  --fondo-tarjeta: #000000;  /* Negro */
+  --texto-tarjeta: #d6108a;  /* Blanco */
+}
+
+/* Estilo de la tarjeta */
+.card {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--fondo-tarjeta);
+  color: var(--texto-tarjeta);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.card a {
+  color: var(--texto-tarjeta);
+  text-decoration: underline;
+}
+
+.card a:hover {
+  color: #f5f3f3; /* Variante clara al pasar el mouse */
+}
+
+
+
+/* Variables globales (opcional) */
+:root {
+  --fondo-global: #f0f0f0;
+  --texto-global: #333333;
+}
+
+/* Tarjeta con variables locales */
+.card {
+  --fondo: #000000;   /* Variable local: solo afecta a esta tarjeta */
+  --texto: #ffffff;   /* Variable local */
+  
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--fondo);  /* usa variable local */
+  color: var(--texto);              /* usa variable local */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.card a {
+  color: var(--texto);  /* también usa la variable local */
+  text-decoration: underline;
+}
+
+.card a:hover {
+  color: #bbbbbb;       /* variante clara al pasar el mouse */
+}
