@@ -190,7 +190,7 @@ a:focus {
   margin-top: 8px;
 }
 .boton00{
-  position: relative; /* 🔹 NECESARIO para que ::after se posicione respecto al botón */
+  position: relative; 
   background-color: #4171a3;
   color: white;
   border: none;
@@ -202,7 +202,7 @@ a:focus {
   overflow: hidden;
 }
 
-/* Crea la sombra con ::after */
+
 .boton00::after {
   content: "";
   position: absolute;
@@ -384,10 +384,10 @@ h2 {
   color: #333;
 }
 
-/* Card centrada debajo del h2 */
+
 .cardcentrada {
   width: 300px;
-  margin: 0 auto 40px auto; /* Auto para centrar horizontalmente, margen inferior */
+  margin: 0 auto 40px auto; 
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
@@ -404,10 +404,10 @@ h2 {
 
 
 :root {
-  --color-primario: #3498db;  /* Azul */
+  --color-primario: #3498db;  
 }
 
-/* Aplicar la variable solo a los elementos dentro de la sección */
+
 .section21 h1,
 .section21 h2,
 .section21 h3,
@@ -425,13 +425,13 @@ h2 {
   text-decoration: underline;
 }
 
-/* Variables para la tarjeta */
+
 :root {
-  --fondo-tarjeta: #000000;  /* Negro */
-  --texto-tarjeta: #d6108a;  /* Blanco */
+  --fondo-tarjeta: #000000;  
+  --texto-tarjeta: #d6108a;  
 }
 
-/* Estilo de la tarjeta */
+
 .card {
   width: 300px;
   margin: 20px auto;
@@ -450,27 +450,27 @@ h2 {
 }
 
 .card a:hover {
-  color: #f5f3f3; /* Variante clara al pasar el mouse */
+  color: #f5f3f3; 
 }
 
 
 
-/* Variables globales (opcional) */
+
 :root {
   --fondo-global: #f0f0f0;
   --texto-global: #333333;
 }
 
-/* Tarjeta con variables locales */
+
 .card {
-  --fondo: #000000;   /* Variable local: solo afecta a esta tarjeta */
-  --texto: #ffffff;   /* Variable local */
+  --fondo: #000000;   
+  --texto: #ffffff;   
   
   width: 300px;
   margin: 20px auto;
   padding: 20px;
-  background-color: var(--fondo);  /* usa variable local */
-  color: var(--texto);              /* usa variable local */
+  background-color: var(--fondo);  
+  color: var(--texto);              
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
   font-family: Arial, sans-serif;
@@ -478,10 +478,10 @@ h2 {
 }
 
 .card a {
-  color: var(--texto);  /* también usa la variable local */
+  color: var(--texto);  
   text-decoration: underline;
 }
 
 .card a:hover {
-  color: #bbbbbb;       /* variante clara al pasar el mouse */
+  color: #bbbbbb;       
 }
